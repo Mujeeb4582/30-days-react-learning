@@ -1,5 +1,7 @@
+import Button from "./button";
 import UserCard from "./card";
 import { student } from "./header";
+import HexaColor from "./hexColorGenerator";
 
 const numOne = 3;
 const numTwo = 2;
@@ -39,6 +41,8 @@ const Main = () => (
         {personAge}
       </div>
       <UserCard />
+      <Button />
+      <HexaColor />
     </div>
   </main>
 );
