@@ -2,6 +2,7 @@ import Button from "./button";
 import UserCard from "./card";
 import { student } from "./header";
 import HexaColor from "./hexColorGenerator";
+import LanguageCard from "./lunguageCard";
 
 const numOne = 3;
 const numTwo = 2;
@@ -43,6 +44,7 @@ const Main = () => (
       <UserCard />
       <Button />
       <HexaColor />
+      <LanguageCard />
     </div>
   </main>
 );
