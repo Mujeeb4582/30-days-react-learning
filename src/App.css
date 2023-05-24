@@ -81,3 +81,11 @@ footer {
   border-radius: 50%;
   width: 14%;
 }
+
+.form-wrapper {
+  background-color: #6cf;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  line-height: 60px;
+}
