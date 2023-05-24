@@ -45,8 +45,8 @@ const Main = () => (
       <UserCard />
       <LanguageCard />
       <SubscribeForm />
-      {/* <Button />
-      <HexaColor /> */}
+      {/* <Button /> */}
+      <HexaColor />
     </div>
   </main>
 );
