@@ -1,4 +1,9 @@
-import Button from "./button";
+import logohtml from "../images/html_logo.png";
+import logocss from "../images/css_logo.png";
+import logojs from "../images/js_logo.png";
+import logoreact from "../images/react_logo.png";
+
+// import Button from "./button";
 import UserCard from "./card";
 import { student } from "./header";
 import HexaColor from "./hexColorGenerator";
@@ -43,7 +48,7 @@ const Main = () => (
         {personAge}
       </div>
       <UserCard />
-      <LanguageCard />
+      <LanguageCard logohtml={logohtml} logocss={logocss} logojs={logojs} logoreact={logoreact}/>
       <SubscribeForm />
       {/* <Button /> */}
       <HexaColor />
