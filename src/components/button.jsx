@@ -1,10 +1,7 @@
-const buttonStyles = {
-  padding: "10px 20px",
-  background: "rgb(0, 255, 0)",
-  border: "none",
-  borderRadius: 5,
-};
-
-const Button = () => <button style={buttonStyles}>action</button>;
+const Button = ({ text, styles, type }) => (
+	<button style={styles} type={type}>
+		{text}
+	</button>
+);
 
 export default Button;
