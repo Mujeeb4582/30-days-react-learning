@@ -10,6 +10,7 @@ import HexaColor from "./hexColorGenerator";
 import LanguageCard from "./lunguageCard";
 import SubscribeForm from "./subscribeForm";
 import { hexaColor } from "../utils/hexColorGenerattor";
+import { skillsArray } from "../utils/skills";
 
 const numOne = 3;
 const numTwo = 2;
@@ -48,7 +49,7 @@ const Main = () => (
         {result}
         {personAge}
       </div>
-      <UserCard />
+      <UserCard skillsArray={skillsArray}/>
       <LanguageCard logohtml={logohtml} logocss={logocss} logojs={logojs} logoreact={logoreact}/>
       <SubscribeForm />
       {/* <Button /> */}
