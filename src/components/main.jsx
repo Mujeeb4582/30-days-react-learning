@@ -9,6 +9,7 @@ import { student } from "./header";
 import HexaColor from "./hexColorGenerator";
 import LanguageCard from "./lunguageCard";
 import SubscribeForm from "./subscribeForm";
+import { hexaColor } from "../utils/hexColorGenerattor";
 
 const numOne = 3;
 const numTwo = 2;
@@ -51,7 +52,7 @@ const Main = () => (
       <LanguageCard logohtml={logohtml} logocss={logocss} logojs={logojs} logoreact={logoreact}/>
       <SubscribeForm />
       {/* <Button /> */}
-      <HexaColor />
+      <HexaColor hexaColor={hexaColor}/>
     </div>
   </main>
 );
