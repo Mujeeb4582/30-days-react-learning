@@ -1,8 +1,3 @@
-import logohtml from "../images/html_logo.png";
-import logocss from "../images/css_logo.png";
-import logojs from "../images/js_logo.png";
-import logoreact from "../images/react_logo.png";
-
 const cardStyles = {
   display: "flex",
   padding: "20px 0",
@@ -18,7 +13,7 @@ const imageStyle = {
   width: "100%",
 };
 
-const LanguageCard = () => {
+const LanguageCard = ({ logohtml, logocss, logojs, logoreact }) => {
   return (
     <>
       <h3 style={{ fontWeight: "bold", textAlign: "center" }}>

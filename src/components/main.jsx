@@ -1,9 +1,16 @@
-import Button from "./button";
+import logohtml from "../images/html_logo.png";
+import logocss from "../images/css_logo.png";
+import logojs from "../images/js_logo.png";
+import logoreact from "../images/react_logo.png";
+
+// import Button from "./button";
 import UserCard from "./card";
 import { student } from "./header";
 import HexaColor from "./hexColorGenerator";
 import LanguageCard from "./lunguageCard";
 import SubscribeForm from "./subscribeForm";
+import { hexaColor } from "../utils/hexColorGenerattor";
+import { skillsArray } from "../utils/skills";
 
 const numOne = 3;
 const numTwo = 2;
@@ -42,11 +49,11 @@ const Main = () => (
         {result}
         {personAge}
       </div>
-      <UserCard />
-      <LanguageCard />
+      <UserCard skillsArray={skillsArray}/>
+      <LanguageCard logohtml={logohtml} logocss={logocss} logojs={logojs} logoreact={logoreact}/>
       <SubscribeForm />
       {/* <Button /> */}
-      <HexaColor />
+      <HexaColor hexaColor={hexaColor}/>
     </div>
   </main>
 );
