@@ -11,6 +11,7 @@ import LanguageCard from "./lunguageCard";
 import SubscribeForm from "./subscribeForm";
 import { hexaColor } from "../utils/hexColorGenerattor";
 import { skillsArray } from "../utils/skills";
+import Mapping from "./mapping_day06/mappingAndRendringArray";
 
 const numOne = 3;
 const numTwo = 2;
@@ -54,6 +55,7 @@ const Main = () => (
       <SubscribeForm />
       {/* <Button /> */}
       <HexaColor hexaColor={hexaColor}/>
+      <Mapping />
     </div>
   </main>
 );
