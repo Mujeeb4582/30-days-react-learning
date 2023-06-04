@@ -1,0 +1,20 @@
+.prime {
+  background-color: #ee3c3c;
+}
+
+.even {
+  background-color: #21b221;
+}
+
+.odd {
+  background-color: #efcf00;
+}
+
+.prime,
+.even,
+.odd {
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
