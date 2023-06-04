@@ -7,11 +7,11 @@ import logoreact from "../images/react_logo.png";
 import UserCard from "./card";
 import { student } from "./header";
 import HexaColor from "./hexColorGenerator";
-import LanguageCard from "./lunguageCard";
+import LanguageCard from "./languageCard";
 import SubscribeForm from "./subscribeForm";
-import { hexaColor } from "../utils/hexColorGenerattor";
+import { hexaColor } from "../utils/hexColorGenerator";
 import { skillsArray } from "../utils/skills";
-import Mapping from "./mapping_day06/mappingAndRendringArray";
+import Mapping from "./mapping_day06/mappingAndRenderingArray";
 
 const numOne = 3;
 const numTwo = 2;
