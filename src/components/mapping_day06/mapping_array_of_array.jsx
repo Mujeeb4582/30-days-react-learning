@@ -5,7 +5,7 @@ const Skill = ({ skill: [tech, level] }) => (
 );
 
 const Skills = ({ skills }) => {
-	const skillList = skills.map((skill) => <Skill skill={skill} />);
+	const skillList = skills.map((skill) => <Skill key={skill} skill={skill} />);
 	return <ul>{skillList}</ul>;
 };
 
