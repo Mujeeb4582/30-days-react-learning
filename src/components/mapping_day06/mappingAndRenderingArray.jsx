@@ -4,7 +4,6 @@ import Countries from "./mapping_array_of_object";
 import { randomNumberArray } from "../../utils/numberGenerator";
 import NumberArray from "./mapping_odd_even_prime_numbers";
 import HexaArray from "./mapping_of_hexadecimal_array";
-import { hexaColor } from "../../utils/hexColorGenerator";
 import { hexaDecimalColorArray } from "../../utils/hexa_decimal_color_array";
 
 const listStyles = {
