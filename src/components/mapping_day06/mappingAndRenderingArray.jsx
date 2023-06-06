@@ -25,7 +25,6 @@ const Mapping = () => {
 	];
 	// randomNumber
 	const numbers = randomNumberArray();
-	console.log("number", numbers);
 
 	return (
 		<div className="container">
