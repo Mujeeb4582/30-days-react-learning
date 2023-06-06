@@ -3,6 +3,22 @@ import Skills from "./mapping_array_of_array";
 import Countries from "./mapping_array_of_object";
 import { randomNumberArray } from "../../utils/numberGenerator";
 import NumberArray from "./mapping_odd_even_prime_numbers";
+import HexaArray from "./mapping_of_hexadecimal_array";
+import { hexaColor } from "../../utils/hexColorGenerator";
+import { hexaDecimalColorArray } from "../../utils/hexa_decimal_color_array";
+
+const listStyles = {
+	display: "grid",
+	gridTemplateColumns: "repeat(8, 1fr)",
+	gap: "2px",
+	marginBottom: "20px",
+};
+
+const headingStyles = {
+	textAlign: "center",
+	fontSize: "40px",
+	paddingBottom: "20px",
+};
 
 const Mapping = () => {
 	// Simple number array
@@ -25,6 +41,8 @@ const Mapping = () => {
 	];
 	// randomNumber
 	const numbers = randomNumberArray();
+	const hexaDecimalColor = hexaDecimalColorArray();
+	console.log(hexaDecimalColor)
 
 	return (
 		<div className="container">
@@ -39,15 +57,13 @@ const Mapping = () => {
 				<h3>Countries List</h3>
 				<Countries countries={countries} />
 			</div>
-			<h3 style={{ textAlign: "center", fontSize: "40px", paddingBottom: "20px" }}>Number Generator</h3>
-			<ul
-				style={{
-					display: "grid",
-					gridTemplateColumns: "repeat(8, 1fr)",
-					gap: "2px",
-				}}
-			>
+			<h3 style={headingStyles}>Number Generator</h3>
+			<ul style={listStyles}>
 				<NumberArray numberArray={numbers} />
+			</ul>
+			<h3 style={headingStyles}>HexaDecimal Colors</h3>
+			<ul style={listStyles}>
+				<HexaArray hexaDecimalColor={hexaDecimalColor} />
 			</ul>
 		</div>
 	);
