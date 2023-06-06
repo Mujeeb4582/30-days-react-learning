@@ -10,7 +10,8 @@ const HexaColor = ({ hexaColor }) => {
     for (let i = 0; i < 6; i++) {
       const color = hexaColor();
       colorElements.push(
-        <div style={{
+        <div key={i}
+        style={{
           backgroundColor: color,
             marginTop: '3px',
             borderRadius: '3px',
