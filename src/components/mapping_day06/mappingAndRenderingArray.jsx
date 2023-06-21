@@ -5,6 +5,8 @@ import { randomNumberArray } from "../../utils/numberGenerator";
 import NumberArray from "./mapping_odd_even_prime_numbers";
 import HexaArray from "./mapping_of_hexadecimal_array";
 import { hexaDecimalColorArray } from "../../utils/hexa_decimal_color_array";
+import PopulationList from "./population_list_mapping";
+import { tenHighestPopulation } from "../../utils/ten_most_highest_populations";
 
 const listStyles = {
 	display: "grid",
@@ -41,7 +43,7 @@ const Mapping = () => {
 	// randomNumber
 	const numbers = randomNumberArray();
 	const hexaDecimalColor = hexaDecimalColorArray();
-	console.log(hexaDecimalColor)
+	console.log(hexaDecimalColor);
 
 	return (
 		<div className="container">
@@ -64,6 +66,9 @@ const Mapping = () => {
 			<ul style={listStyles}>
 				<HexaArray hexaDecimalColor={hexaDecimalColor} />
 			</ul>
+			<h3 style={headingStyles}>World Population</h3>
+			<p style={{ textAlign: "center" }}>Ten most populated countries</p>
+			<PopulationList data={tenHighestPopulation} />
 		</div>
 	);
 };
