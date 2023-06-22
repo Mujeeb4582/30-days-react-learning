@@ -1,0 +1,29 @@
+.prime {
+  background-color: #ee3c3c;
+}
+
+.even {
+  background-color: #21b221;
+}
+
+.odd {
+  background-color: #efcf00;
+}
+
+.prime,
+.even,
+.odd {
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hexaColor {
+  padding: 50px 10px;
+  text-align: center;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 600;
+}
